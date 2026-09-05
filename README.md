@@ -24,7 +24,7 @@ To use this module, you should have Terraform installed and configured for AWS. 
 ```hcl
 module "vpc-peering" {
   source           = "cypik/vpc-peering/aws"
-  version          ="1.0.2"
+  version          ="1.0.3"
   name             = local.name
   environment      = local.environment
   requestor_vpc_id = "vpc-045eae4d6b443a318"
@@ -37,7 +37,7 @@ module "vpc-peering" {
 ```hcl
 module "vpc-peering" {
   source           = "cypik/vpc-peering/aws"
-  version          ="1.0.2"
+  version          ="1.0.3"
   name             = "vpc-peering"
   environment      = "prod"
   label_order      = ["environment", "name"]
@@ -63,21 +63,21 @@ Replace **MIT** and **Cypik** with the appropriate license and your information.
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9.5 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.82.2 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.15.8 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 6.58.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 5.82.2 |
-| <a name="provider_aws.peer"></a> [aws.peer](#provider\_aws.peer) | ~> 5.82.2 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 6.58.0 |
+| <a name="provider_aws.peer"></a> [aws.peer](#provider\_aws.peer) | >= 6.58.0 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_labels"></a> [labels](#module\_labels) | cypik/labels/aws | 1.0.2 |
+| <a name="module_labels"></a> [labels](#module\_labels) | cypik/labels/aws | 1.0.4 |
 
 ## Resources
 
